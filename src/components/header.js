@@ -1,11 +1,11 @@
 import React from 'react';
-import Navigation from './navigation';
+import Nav from './Nav';
 
 const Header = () => {
   return (
     <header>
       <h1>BreeAnn Bond</h1>
-      <Navigation/>
+      <Nav/>
     </header>
   );
 };
