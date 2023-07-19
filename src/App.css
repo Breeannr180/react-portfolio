@@ -138,31 +138,6 @@ main {
 	font-size: 1.5rem;
 	margin-top: 1rem;
 	}
-/* #work .grid-container {
-	display: flex;
-	justify-content:flex-start;
-	padding: 20px;
-  }
-  
-  
-  #work .grid-container {
-	max-width: 300px;
-  }
-
-.smallpic {
-	margin-left: 200px;
-	padding: 2%;
-	
-}  */
-
-  
-/* #work .content {
-	bottom: 0; 
-	background: rgb(0, 0, 0); 
-	color: #f1f1f1; 
-	width: 200%; 
-	padding: 20px; 
-}   */
 
 .contact-me {
 	display: flex;
