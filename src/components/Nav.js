@@ -2,14 +2,14 @@ import React from 'react';
 
 
 
-const Navigation = () => {
+const Navigation = ({page, setPage}) => {
   return (
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a onClick={() => setPage("home")} href="#about">About</a></li>
+        <li><a onClick={() => setPage("work")}  href="#portfolio">Work</a></li>
+        <li><a onClick={() => setPage("contact")}href="#contact">Contact</a></li>
+        <li><a onClick={() => setPage("resume")}href="#resume">Resume</a></li>
       </ul>
     </nav>
   );

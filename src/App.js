@@ -1,34 +1,70 @@
-import React from 'react';
-// import React, { useState } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Nav from './components/Nav';
-import Project from './components/Project';
-// import About from './components/About';
-// import Contact from './components/Contact';
-// import Resume from './components/Resume';
+import Nav from './components/Nav';
+import ProjectSection from './components/projectsection';
+import About from './components/About';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
+
+  const [currentPage, setCurrentPage] = useState("home");
+
+  const renderPage = () => {
+    if (currentPage === "home") {
+      return <Home />;
+    } else if (currentPage === "about") {
+      return <About />;
+    } else if (currentPage === "contact") {
+      return <Contact />;
+    } else if (currentPage === "resume") {
+      return <Resume />;
+    } else if (currentPage === "work") {
+      return <ProjectSection />;
+    }
+  };
+
   return (
     // <Router>
     <div className="App">
-      <Header />
+      <Header page={currentPage} setPage={setCurrentPage} />
       {/* <section className="hero-image">
         <div>
           <h2>Changing the world one project at a time.</h2>
         </div>
       </section> */}
       <main>
-        <section className="container-right">
+        {renderPage()}
+        
+      </main>
+
+      <Footer />
+    </div>
+    // </Router>
+  );
+}
+
+export default App;
+
+
+function Home(){
+  return (
+    <section className="container-right">
+      <section className="hero-image">
+        <div>
+          <h2>Changing the world one project at a time.</h2>
+        </div>
+      </section>
           <div className="right-column">
-             <div id="about">
+            <div id="about">
               <h2>About</h2>
               <p>I received my Bachelors in Tourism and Communications from ASU and a Master's in Business Administration. I have many years of experience in the financial industry and am a certified full stack web developer.</p>
-              <img src="./images/headshot.jpeg" alt="headshot" style={{ width: '150px', height: '250px' }} /> 
-            </div> 
-
+              <img src="./images/headshot.jpeg" alt="headshot" style={{ width: '150px', height: '250px' }} />
+            </div>
+{/* 
             <section id="work">
               <h2>Work</h2>
               <Project imageUrl="./images/Koding Kitchen.png" altText="Recipe Generator" />
@@ -36,8 +72,8 @@ function App() {
               <Project imageUrl="./images/workday scheduler.png" altText="Work Item 3" />
               <Project imageUrl="./images/Horiseon code refractor.png" altText="Work Item 4" />
               <Project imageUrl="./images/passwordgenerator.png" altText="Work Item 5" />
-            </section>
-        
+            </section> */}
+
             <section id="contact">
               <h2>Contact Info</h2>
               <div className="contact-me">
@@ -48,15 +84,8 @@ function App() {
                 <a href="https://github.com/Breeannr180" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
             </section>
-            
+
           </div>
         </section>
-      </main>
-
-      <Footer />
-    </div>
-    // </Router>
-  );
+  )
 }
-
-export default App;
