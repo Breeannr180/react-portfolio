@@ -28,14 +28,8 @@ function App() {
   };
 
   return (
-    // <Router>
     <div className="App">
       <Header page={currentPage} setPage={setCurrentPage} />
-      {/* <section className="hero-image">
-        <div>
-          <h2>Changing the world one project at a time.</h2>
-        </div>
-      </section> */}
       <main>
         {renderPage()}
         
@@ -43,7 +37,6 @@ function App() {
 
       <Footer />
     </div>
-    // </Router>
   );
 }
 
@@ -64,15 +57,6 @@ function Home(){
               <p>I received my Bachelors in Tourism and Communications from ASU and a Master's in Business Administration. I have many years of experience in the financial industry and am a certified full stack web developer.</p>
               <img src="./images/headshot.jpeg" alt="headshot" style={{ width: '150px', height: '250px' }} />
             </div>
-{/* 
-            <section id="work">
-              <h2>Work</h2>
-              <Project imageUrl="./images/Koding Kitchen.png" altText="Recipe Generator" />
-              <Project imageUrl="./images/Weather App.png" altText="Weather App" />
-              <Project imageUrl="./images/workday scheduler.png" altText="Work Item 3" />
-              <Project imageUrl="./images/Horiseon code refractor.png" altText="Work Item 4" />
-              <Project imageUrl="./images/passwordgenerator.png" altText="Work Item 5" />
-            </section> */}
 
             <section id="contact">
               <h2>Contact Info</h2>
