@@ -21,28 +21,20 @@ To run any of the projects locally:
 
 Clone this repository to your local machine using the following command:
 
-bash
-Copy code
 git clone https://github.com/your-username/your-portfolio-repo.git
+
 Navigate to the project directory:
 
-bash
-Copy code
 cd project-directory
-Install the required dependencies using npm or yarn:
 
-bash
-Copy code
+Install the required dependencies using npm:
+
 npm install
-# or
-yarn install
+
 Start the development server:
 
-bash
-Copy code
 npm start
-# or
-yarn start
+
 Now you can access the project in your web browser at http://localhost:3000.
 
 ## Technologies Used
