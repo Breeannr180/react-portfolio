@@ -15,7 +15,7 @@ Welcome to my React career portfolio! This repository showcases some of the proj
 
 Follow the link to see current and past projects
 
-![alt text](assets/images/screenshot.png)
+![screenshot](./public/images/Screenshot.png)
 
 To run any of the projects locally:
 
