@@ -4,7 +4,7 @@ import Nav from './Nav';
 const Header = (props) => {
   return (
     <header>
-      <h1>BreeAnn N Bond</h1>
+      <h1>BreeAnn Bond</h1>
       <Nav {...props}/>
     </header>
   );
