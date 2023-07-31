@@ -13,7 +13,7 @@ Welcome to my React career portfolio! This repository showcases some of the proj
 
 ## Installation
 
-Follow the link to see current and past projects
+Follow the link to see current and past projects https://delightful-torrone-0da4cb.netlify.app/
 
 ![screenshot](./public/images/Screenshot.png)
 
